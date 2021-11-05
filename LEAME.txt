@@ -1,0 +1,65 @@
+//##############################################################################
+// This software IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR #
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,    #
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL     #
+// THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR        #
+// OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,       #
+// ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR       #
+// OTHER DEALINGS IN THE SOFTWARE.                                             #
+//##############################################################################
+
+################################################################################
+#  Sistema de Usuarios PHP y MySql basado en sesiones.                         #
+################################################################################
+
+DESCRIPCION:
+------------
+
+Permite: Logearse, Registrar nuevos usuarios, Generar nuevas contraseñas en 
+caso de olvidarla, Cambiar la contraseña.
+
+Al registrarse envia un email al usuario con un link de activacion para 
+verificar la autenticidad del usuario.
+
+En caso de que un usuario ingrese erroneamente mas de 5 veces, el usuario 
+debera esperar 1 minuto para volver a intentar a ingresar. Y si el el usuario 
+intenta ingresar erroneamente mas de 20 veces se bloquea automaticamente este 
+usuario.
+
+################################################################################
+
+COMO INSTALAR:
+--------------
+
+Ir al CPANEL, despues a "MySQL Bases de Datos",
+Crear una base de datos, y asignarle un usuario con contraseña.
+Una vez hecho esto editar el archivo "config.php" con los datos 
+correspondientes.
+Despues correr el archivo "instalar.php" el cual nos creará la tabla dentro 
+de la base de datos. 
+
+################################################################################
+
+HISTORIAL:
+----------
+
+Versión 2.01 | 11/05/2021
+	- Se agrega opcion de "Recordarme" en el inicio de sesion.
+	- Se mejora la instalacion del sistema.
+	- Se mejora la seguridad evitando ataques de JavaScript XSS, entre otros.
+	- Se agrega mostrar/ocultar contraseña en el inicio de sesion .
+
+Versión 2.00 | 01/12/2019
+	- Se agrega hoja de estilo style.css
+	- Se simplifica y se adapta el codigo HTML a la version 5.
+	- Se mejora la estructura php.
+	- Se cambia todos los 'mysql_' por 'mysqli'.
+	- Se mejora notablemente la seguridad evitando "Injection Attacks".
+	- Se mejora el hash de la contraseña.
+
+Versión 1.01 | 28/08/2011
+	- Se agregan verificaciones en el registro de usuarios.
+	- Se incluye el archivo LEAME para mayor informacion del sistema.
+
+Versión 1.00 | 12/08/2011
+	- Primera version del sistema

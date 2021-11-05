@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap');
+html {
+	margin: 10px;
+	padding: 10px;
+	font-family: 'PT Sans Caption', sans-serif;
+	font-size: 0.9em;
+	font-weight: normal;
+	font-style: normal;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	color: black;
+}
+/************************************************************************************
+ESTRUCTURA PRINCIPAL
+*************************************************************************************/
+* {box-sizing: border-box;}
+p {text-align: center;}
+h2 {text-align: center;}
+form {
+	background-color: #f2f2f2;
+	padding: 5px 20px 15px 20px;
+	border: 1px solid lightgrey;
+	border-radius: 10px;
+}
+.login {
+	margin: auto;
+	max-width: 300px;
+}
+label {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: block;
+}
+.register {
+	margin: auto;
+	max-width: 600px;
+}
+.pass {
+	margin: auto;
+	max-width: 420px;
+}
+.error {color: #FF0000;}
+/* Style the input container */
+.input-container {
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	width: 100%;
+	margin-bottom: 15px;
+}
+/* Style the form icons */
+.icon {
+	padding: 14px;
+	background: dodgerblue;
+	color: white;
+	width: 50px;
+	text-align: center;
+}
+/* Style the refresh captcha icon */
+.refresh-captcha {
+	color: blue;
+	cursor: pointer;
+}
+/* Style the icon password eye */
+.iconeye {
+	padding: 14px;
+	margin-left: -45px;
+	width: 50px;
+	text-align: center;
+	cursor: pointer;
+}
+/* Style the input fields */
+.input-field {
+	width: 100%;
+	padding: 10px;
+	outline: none;
+	border: 1px solid #a9a9a9;
+	box-shadow: none;
+	font: inherit;
+}
+.input-field:focus {
+	border: 2px solid dodgerblue;
+}
+.input-field:invalid {
+	border: 2px solid red;
+}
+.input-captcha {
+	width: 150px;
+	outline: none;
+	border: 1px solid #a9a9a9;
+	box-shadow: none;
+	font: inherit;
+}
+/* Set a style for the submit button */
+.btn {
+	position: relative;
+	cursor: pointer;
+	width: auto;
+	display: inline-block;
+	text-align: center;
+	white-space: nowrap;
+	border: none;
+	border-radius: 5px;
+	padding: 14px 28px;
+	text-decoration: none;
+	color: white;
+	font: inherit;
+	opacity: 1;
+}
+.btn:hover {opacity: 0.8;}
+.red {
+	background: linear-gradient(180deg, #f24537 0%, #c62d1f 100%);
+	border: 1px solid #931;
+ }
+.green {
+	background: linear-gradient(180deg, #89ff68 0%, #336d16 100%);
+	border: 1px solid #65dc31;
+}
+.blue {
+	background: linear-gradient(180deg, #007dc1 0%, #0061a7 100%);
+	border: 1px solid #124d77;
+}
